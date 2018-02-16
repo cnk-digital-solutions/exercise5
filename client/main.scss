@@ -1,23 +1,31 @@
-// Output grid helper classes and data-attributes
+// Basic parameter definition
 $o-grid-is-silent: false;
-
-// Output @font-face declarations
 $o-fonts-is-silent: false;
-
-// Output icon helper classes
 $o-ft-icons-is-silent: false;
-
-// Output header classes
 $o-header-is-silent: false;
-
-// Output tabs classes
 $o-tabs-is-silent: false;
 $o-hierarchical-nav-is-silent: false;
+$o-grid-is-silent: false;
+$o-fonts-is-silent: false;
+$o-ft-icons-is-silent: false;
+$o-header-is-silent: false;
+$o-buttons-is-silent: false;
+$o-footer-is-silent: false;
+$o-forms-is-silent: false;
+$o-loading-is-silent: false;
+$o-share-is-silent: false;
+$o-teaser-is-silent: false;
+$o-colors-is-silent: false;
+$o-gallery-is-silent: false;
+$o-typography-is-silent: false;
+$o-hoverable-is-silent: false;
+$o-expander-is-silent: false;
 
 // Import Origami components
 @import 'o-grid/main';
 @import 'o-fonts/main';
 @import 'o-icons/main';
+@import 'o-tabs/main';
 @import 'o-hierarchical-nav/main';
 
 
@@ -40,3 +48,21 @@ body {
 	// Remove space around the document
 	margin: 0;
 }
+
+
+// o-tabs setup
+@include oTabsButtonTabsTheme('primary');
+@include oTabsButtonTabsTheme('inverse');
+
+// o-hierarchical-nav setup
+.o-hierarchical-nav {
+
+	li {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	a {
+		padding: 10px 20px;
+	}
+}
+@include oHierarchicalNavHorizontalTheme;

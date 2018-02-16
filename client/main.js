@@ -1,8 +1,6 @@
 // Require module
 require('o-grid');
-require('o-header');
-require('o-loading');
-require('o-toggle');
+require('o-hierarchical-nav');
 
 const oTabs = window.oTabs = require('o-tabs');
 
